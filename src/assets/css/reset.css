@@ -1,0 +1,14 @@
+@charset "UTF-8";
+body{background: #f1f1f1;font-family:"Microsoft YaHei","PingFang SC","PingFang SC", "Lantinghei SC", "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei",  STHeitiSC-Light, simsun,  "WenQuanYi Zen Hei", "WenQuanYi Micro Hei", sans-serif;color: #333333;}
+html, body, div, p, hr, pre, h1, h2, h3, h4, h5, h6, table, tr, td, th, tfoot, tbody, thead, form, input, textarea, label, ul, ol, dl, li, dt, dd, .clearfix:after { margin: 0; padding: 0; }
+a,span,i,input,img{display: inline-block;}
+a,a:hover{color: #333333;text-decoration: none;}
+img{vertical-align: middle;}
+img,input{border: 0;outline: none;}
+h1, h2, h3, h4, h5, h6{font-weight: normal;}
+ul,li{list-style: none;}
+.fl{float: left;}
+.fr{float: right;}
+img{width: 100%;height:auto;}
+.no-bord-btm{border-bottom: 0 !important;}
+.no-bord-rt{border-right: 0!important;}
