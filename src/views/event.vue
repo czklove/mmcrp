@@ -19,20 +19,28 @@
       <ul>
         <li>
           <van-row>
-            <van-col span="16">
-              <h2>a</h2>
+            <van-col span="17">
+              <div class="lefttext">
+                <span></span>
+                <h2>中国人民大学出版社与意大利路易斯大学签署“一带一路”学术出版联盟合作协议</h2>
+                <p>2019-04-08</p>
+              </div>
             </van-col>
-            <van-col span="8" class="fr-right">
+            <van-col span="7" class="fr-right">
               <img src="../../src/assets/img/event1.gif" alt="">
             </van-col>
           </van-row>
         </li>
         <li>
           <van-row>
-            <van-col span="16">
-              <h2>b</h2>
+            <van-col span="17">
+              <div class="lefttext">
+                <span></span>
+                <h2>中国人民大学出版社与意大利路易斯大学签署“一带一路”学术出版联盟合作协议</h2>
+                <p>2019-04-08</p>
+              </div>
             </van-col>
-            <van-col span="8" class="fr-right">
+            <van-col span="7" class="fr-right">
               <img src="../../src/assets/img/event2.gif" alt="">
             </van-col>
           </van-row>
@@ -106,13 +114,41 @@ export default {
     overflow: hidden;
     background-color: #fff;
     li {
-      padding:.9375rem .875rem .9375rem 1rem;
+      padding:0 .875rem 0 1rem;
       .fr-right {
         text-align: right;
+        padding: .9375rem 0;
         img {
           width: 5.9375rem;
           height: 4rem;
           border-radius: .25rem;
+        }
+      }
+      .lefttext{
+        margin-left: .75rem;
+        border-left: .1875rem solid #ccc;
+        padding: .9375rem 0;
+        padding-left: 1.1rem;
+        position: relative;
+        h2{
+          font-size: .9375rem;
+          line-height: 1.6rem;
+          height: 3.2rem;
+          overflow: hidden;
+        }
+        p {
+          font-size: .875rem;
+          color: #ccb18e;
+        }
+        span {
+          position: absolute;
+          width: 3rem;
+          height: 3rem;
+          left: -1.125rem;
+          margin-top:.875rem;
+          background: url(~@/assets/img/dot-yellow.png) no-repeat;
+          background-size: 70% auto;
+          z-index: 99;
         }
       }
     }
