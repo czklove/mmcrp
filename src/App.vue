@@ -26,7 +26,6 @@ export default {
 </script>
 <style lang="less">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   .main {
     background-color: #f1f1f1;
     overflow: hidden;

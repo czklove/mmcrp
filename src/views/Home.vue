@@ -1,6 +1,8 @@
 <template>
   <div class="home">
-    <c-swpic :height="'13.125rem'" :imglist="imglist"></c-swpic>
+    <div class="adlist">
+      <c-swpic :imglist="imglist"></c-swpic>
+    </div>
     <c-tilte :title="'新闻'" :navs="[{ name:'新闻动态', active: 'active'},{ name: '媒体聚焦' },{ name: '海外合作' }]"></c-tilte>
     <div class="h-newlist">
         <ul>
@@ -87,6 +89,9 @@ export default {
     ul{
       overflow: hidden;
     }
+  }
+  .adlist {
+    height: 13.125rem;
   }
   .new_nav{
     margin: .625rem;

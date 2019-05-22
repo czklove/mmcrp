@@ -1,24 +1,33 @@
 <!--  -->
 <template>
   <div class="swpic">
-    <van-swipe :autoplay="3000" indicator-color="white">
-      <!-- <van-swipe-item v-for="(image, index) in images" :key="index">
-        <img v-lazy="image" />
-      </van-swipe-item> -->
-      <van-swipe-item v-for="(image, index) in imglist" :key="index" class="vswipe">
-        <img :src="image.imgurl" alt="" :height="height">
-      </van-swipe-item>
-    </van-swipe>
+    <swiper :options="swiperOption" class="swiper">
+		  <swiper-slide v-for="(slide, index) in imglist"  :key="index"><h1><img :src="slide.imgurl" alt=""></h1></swiper-slide>
+		  <div class="swiper-pagination" slot="pagination"></div>
+    </swiper>
   </div>
 </template>
 
 <script>
 export default {
   props:['imglist','height'],
-  data () {
-    return {
-    };
-  }
+  data() {
+      return {
+        swiperOption: {
+          pagination: {
+            el: '.swiper-pagination'
+          },
+            autoplay: {
+            delay: 3000,
+            stopOnLastSlide: false,
+            disableOnInteraction: true,
+          },
+          effect: 'fade',
+        }
+      }
+    },
+    mounted() {
+    }
 }
 
 </script>
@@ -32,5 +41,7 @@ export default {
       width: 100%;
     }
   }
+  .swiper-slide{opacity: 0 !important; transition: opacity 2s !important;}
+  .swiper-slide-active{opacity: 1 !important;transition: opacity 2s !important;} 
 }
 </style>

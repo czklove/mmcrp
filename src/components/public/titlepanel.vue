@@ -48,7 +48,6 @@ export default {
       span{
         float: right;
         font-size: 12px;
-        line-height: 1.8rem;
       }
       font.red {
         color: red;
